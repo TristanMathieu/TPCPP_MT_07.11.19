@@ -1,47 +1,17 @@
 #pragma once
-//Point dans un plan
 class CPoint
 {
 private:
 	float nX;
 	float nY;
+	static int nbPoint;
 
 public:
-
-	//Constructeurs
+	//Constructeur sans parametres
 	CPoint();
-	CPoint(float nX, float nY);
+	//CPoint(float nX, float nY);
 
-	//Init
-	void init(float nX, float nY);
+	void afficher();
 
-	//-- set/get --
-	//Getter
-	float getX();
-	float getY();
-
-	//Setter
-	void setX(float nX);
-	void setY(float nY);
-
-	
-
-	//-- Methodes --
-	//Deplacement
-	void deplace(float nAddX, float nAddY);
-
-	//Abscisse et ordonnée
-	float abscisse();
-	float ordonnee();
-
-	//affichage;
-	void affichage();
-
-	//---Geometrie---
-	//Homothétie
-	void homothetie(CPoint ptCentreO, CPoint ptPointM, float argumentb);
-
-	//rotation
-	void rotation(float argumentb);
-	
+	void deplacer(float nX, float nY);
 };
