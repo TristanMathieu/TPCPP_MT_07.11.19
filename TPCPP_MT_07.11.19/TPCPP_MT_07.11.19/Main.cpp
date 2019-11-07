@@ -13,7 +13,11 @@ int main()
 	cout << "Y : " << ptMonPoint.getY() << endl;
 
 	ptMonPoint.deplace(0, 30);
-	ptMonPoint.affichage();
+
+	cout << "X : " << ptMonPoint.abscisse() << endl;
+	cout << "Y : " << ptMonPoint.ordonnee() << endl;
+	
+	
 
 	system("pause");
 	return 0;

@@ -12,6 +12,9 @@ public:
 	CPoint();
 	CPoint(float nX, float nY);
 
+	//Init
+	void init(float nX, float nY);
+
 	//-- set/get --
 	//Getter
 	float getX();
@@ -21,13 +24,13 @@ public:
 	void setX(float nX);
 	void setY(float nY);
 
-	//Init
-	void init(float nX, float nY);
+	
 
 	//-- Methodes --
 	//Deplacement
 	void deplace(float nAddX, float nAddY);
 
-	//Affichage
-	void affichage();
+	//Abscisse et ordonnée
+	float abscisse();
+	float ordonnee();
 };

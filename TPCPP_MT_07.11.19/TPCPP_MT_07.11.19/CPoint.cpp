@@ -5,15 +5,7 @@
 
 using namespace std;
 
-float CPoint::getX()
-{
-	return nX;
-}
 
-float CPoint::getY()
-{
-	return nY;
-}
 
 void CPoint::deplace(float nAddX, float nAddY)
 {
@@ -22,12 +14,18 @@ void CPoint::deplace(float nAddX, float nAddY)
 
 }
 
-void CPoint::affichage()
+//abscisse et Ordonnée
+float CPoint::abscisse()
 {
-	cout << "X : " << nX << endl;
-	cout << "Y : " << nY << endl;
+	return nX;
 }
 
+float CPoint::ordonnee()
+{
+	return nY;
+}
+
+//-- set et get --
 void CPoint::setX(float nX)
 {
 	this->nX = nX;
@@ -38,6 +36,17 @@ void CPoint::setY(float nY)
 	this->nY = nY;
 }
 
+float CPoint::getX()
+{
+	return nX;
+}
+
+float CPoint::getY()
+{
+	return nY;
+}
+
+//Init et constructeurs
 void CPoint::init(float nX, float nY)
 {
 	this->nX = nX;
