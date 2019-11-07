@@ -33,4 +33,15 @@ public:
 	//Abscisse et ordonnée
 	float abscisse();
 	float ordonnee();
+
+	//affichage;
+	void affichage();
+
+	//---Geometrie---
+	//Homothétie
+	void homothetie(CPoint ptCentreO, CPoint ptPointM, float argumentb);
+
+	//rotation
+	void rotation(float argumentb);
+	
 };

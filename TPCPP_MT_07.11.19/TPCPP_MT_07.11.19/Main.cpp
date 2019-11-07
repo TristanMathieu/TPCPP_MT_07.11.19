@@ -7,16 +7,24 @@ using namespace std;
 
 int main()
 {
-	CPoint ptMonPoint(0, 10);
-	
-	cout << "X : " << ptMonPoint.getX() << endl;
-	cout << "Y : " << ptMonPoint.getY() << endl;
+	CPoint ptMonPoint(3, 5);
+	CPoint ptDeusiPoint(5, 8);
+	CPoint ptCentreO(1, 3);
 
-	ptMonPoint.deplace(0, 30);
-
-	cout << "X : " << ptMonPoint.abscisse() << endl;
-	cout << "Y : " << ptMonPoint.ordonnee() << endl;
+	cout << "Pt a modifier" << endl;
+	ptMonPoint.affichage();
+	cout << "Pt M" << endl;
+	ptDeusiPoint.affichage();
+	cout << "Centre O" << endl;
+	ptCentreO.affichage();
 	
+	ptMonPoint.homothetie(ptCentreO, ptDeusiPoint, 3);
+	cout << "Pt modifie" << endl;
+	ptMonPoint.affichage();
+
+	ptMonPoint.rotation(90);
+	cout << "Pt modifie par rotation" << endl;
+	ptMonPoint.affichage();
 	
 
 	system("pause");
